@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sunsh.smartlayout.over.WebViewActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="ssb提供"
+        android:textSize="16dp" />
+    <com.sunsh.layout.overscroll.OverScrollLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:prl_targetId="@+id/webView">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never" />
+        </FrameLayout>
+
+    </com.sunsh.layout.overscroll.OverScrollLayout>
+
+</android.support.constraint.ConstraintLayout>
